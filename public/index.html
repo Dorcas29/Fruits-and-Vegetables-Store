@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits and Vegetables Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Fruits & Vegetables</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#customer">Customers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <h2>Welcome to Our Fresh Produce Store</h2>
+            <p>We offer a variety of fresh fruits and vegetables sourced locally.</p>
+            <div class="gallery">
+                <div class="item">
+                    <img src="fruit1.jpg" alt="Fruit 1">
+                    <h3>Fresh Oranges</h3>
+                </div>
+                <div class="item">
+                    <img src="vegetable1.jpg" alt="Vegetable 1">
+                    <h3>Organic Spinach</h3>
+                </div>
+                <!-- Add more items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2>Our Categories</h2>
+            <div class="category-list">
+                <div class="category">
+                    <img src="fruit-category.jpg" alt="Fruit Category">
+                    <h3>Fruits</h3>
+                </div>
+                <div class="category">
+                    <img src="vegetable-category.jpg" alt="Vegetable Category">
+                    <h3>Vegetables</h3>
+                </div>
+                <!-- Add more categories as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Apple</h3>
+                    <p class="description">Sweet and crisp apples from our orchards.</p>
+                    <p class="price">$1.99 per lb</p>
+                    <button onclick="addToCart('Apple')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Product 2">
+                    <h3>Tomato</h3>
+                    <p class="description">Fresh tomatoes, great for salads and cooking.</p>
+                    <p class="price">$0.99 each</p>
+                    <button onclick="addToCart('Tomato')">Add to Cart</button>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are passionate about delivering fresh and nutritious fruits and vegetables to our community.</p>
+        </div>
+    </section>
+
+    <!-- Customer Section -->
+    <section id="customer" class="customer">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div class="reviews">
+                <div class="review">
+                    <h3>John Doe</h3>
+                    <p>"Great service and quality products!"</p>
+                </div>
+                <!-- Add more reviews as needed -->
+            </div>
+            <h2>Add to Cart</h2>
+            <form id="cartForm">
+                <label for="product">Product:</label>
+                <select id="product" name="product">
+                    <option value="Apple">Apple</option>
+                    <option value="Tomato">Tomato</option>
+                    <!-- Add more options for other products -->
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <button type="submit">Add to Cart</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dorcas</p>
+        </div>
+    </footer>
+
+    <!-- ScrollBar -->
+    <div class="scrollbar"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
